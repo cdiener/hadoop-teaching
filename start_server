@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+export HADOOP_CLASSPATH=/share/hadoop/yarn/test/hadoop-yarn-server-tests-${HADOOP_VERSION}-tests.jar
+hadoop jar /share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-${HADOOP_VERSION}-tests.jar minicluster -writeConfig ${HADOOP_CONF_DIR}/core-site.xml -writeDetails /root/server.json
