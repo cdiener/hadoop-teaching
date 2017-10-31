@@ -11,6 +11,6 @@ RUN cd /root && \
     wget -q http://www-eu.apache.org/dist/hadoop/common/hadoop-${HADOOP_VERSION}/hadoop-${HADOOP_VERSION}.tar.gz && \
     tar -xzf hadoop-${HADOOP_VERSION}.tar.gz && cp -rf hadoop-${HADOOP_VERSION}/* .. && \
     rm -rf hadoop-${HADOOP_VERSION} && rm hadoop-${HADOOP_VERSION}.tar.gz && \
-    chmod +x /bin/start_server make_data.py && python3 -m pip install faker
+    chmod +x /bin/start_server /bin/make_data.py && python3 -m pip install faker
 
 ENTRYPOINT [ "/bin/bash", "/bin/start_server" ]
