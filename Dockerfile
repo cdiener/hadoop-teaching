@@ -1,7 +1,7 @@
 FROM openjdk:jre-alpine
 MAINTAINER "Christian Diener <mail (at) cdiener.com>"
 
-ENV HADOOP_VERSION="2.8.1"
+ENV HADOOP_VERSION="2.8.2"
 ENV HADOOP_CONF_DIR="/etc/hadoop"
 
 COPY start_server /bin
