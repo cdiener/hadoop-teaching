@@ -22,15 +22,15 @@ def data_row(gen):
     return [
         gen.uuid4(),
         gen.date_this_year().isoformat(),
-        gen.name(),
+        gen.name().replace(",", " "),
         gen.phone_number(),
         gen.company_email(),
-        gen.street_name(),
+        gen.street_name().replace(",", " "),
         gen.city(),
         gen.postcode(),
         gen.state(),
-        gen.random.randint(1e4, 1e8) / 100.0,
-        gen.random.randint(1e3, 1e7) / 100.0
+        gen.random.randint(1e4, 1e7) / 100.0,
+        gen.random.randint(1e4, 1e7) / 100.0
     ]
 
 
