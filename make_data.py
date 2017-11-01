@@ -30,7 +30,7 @@ def data_row(gen):
         gen.postcode(),
         gen.state(),
         gen.random.randint(1e4, 1e7) / 100.0,
-        gen.random.randint(1e4, 1e7) / 100.0
+        gen.random.randint(1e3, 1e6) / 100.0
     ]
 
 
